@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NOOR'S COSMETICS | Natural Beauty & Skincare</title>
+<title>NOOR'S COSMETICS | Luxury Skincare</title>
 
-    <meta name="description" content="Discover NOOR'S COSMETICS, an Algerian skincare brand. Explore our skincare collection and exclusive offers.">
-    <meta name="theme-color" content="#32164d">
-    <link rel="icon" href="images/logo.jpg">
+<meta name="description" content="Discover NOOR'S COSMETICS, an Algerian skincare brand. Explore our skincare collection and exclusive offers.">
+<meta name="theme-color" content="#32164d">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="images/logo.jpg">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 
@@ -31,17 +32,18 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+    scroll-padding-top: 100px;
 }
 
 :root {
     --purple: #8055a6;
-    --purple-light: #a78dd6;
+    --purple-light: #b69bd5;
     --purple-dark: #32164d;
-    --purple-deep: #241039;
+    --purple-deep: #21102f;
     --lavender: #eee5fa;
-    --background: #faf7ff;
+    --background: #faf8fc;
     --white: #ffffff;
+    --gold: #c8a96e;
     --text: #321c48;
 }
 
@@ -67,30 +69,17 @@ img {
     display: block;
 }
 
-.container {
-    width: 86%;
-    max-width: 1250px;
-    margin: auto;
-}
-
 /* =========================
    ANNOUNCEMENT
 ========================= */
 
 .announcement {
-    background: linear-gradient(
-        90deg,
-        #e6d3fa,
-        #f5edfc,
-        #e6d3fa
-    );
-
-    color: var(--purple-deep);
+    background: var(--purple-deep);
+    color: #e8d9f3;
     text-align: center;
-    padding: 11px 15px;
-    font-size: 11px;
-    letter-spacing: 2px;
-    font-weight: 500;
+    padding: 12px;
+    font-size: 10px;
+    letter-spacing: 3px;
 }
 
 /* =========================
@@ -98,8 +87,8 @@ img {
 ========================= */
 
 header {
-    height: 78px;
-    background: white;
+    min-height: 85px;
+    background: rgba(255,255,255,.97);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -108,6 +97,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    backdrop-filter: blur(15px);
 }
 
 .logo {
@@ -124,8 +114,8 @@ header {
 
 .logo span {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 29px;
-    letter-spacing: 5px;
+    font-size: 30px;
+    letter-spacing: 6px;
     font-weight: 600;
     color: var(--purple-deep);
 }
@@ -136,8 +126,8 @@ nav {
 }
 
 nav a {
-    font-size: 12px;
-    letter-spacing: 1px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
     font-weight: 500;
     transition: .3s;
 }
@@ -147,18 +137,18 @@ nav a:hover {
 }
 
 .cart-button {
-    border: 1px solid #e1d1f0;
+    border: 1px solid #e6d8f0;
     background: white;
     color: var(--purple-deep);
-    padding: 11px 20px;
+    padding: 12px 22px;
     border-radius: 30px;
-    font-size: 12px;
+    font-size: 11px;
     transition: .3s;
 }
 
 .cart-button i {
     color: var(--purple);
-    margin-right: 6px;
+    margin-right: 7px;
 }
 
 .cart-button:hover {
@@ -170,100 +160,97 @@ nav a:hover {
 ========================= */
 
 .hero {
-    min-height: 590px;
+    min-height: 510px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    padding: 75px 9%;
-    background: radial-gradient(
-        ellipse at 80% 45%,
-        #ede4fa,
-        #f6f0fb 50%,
-        #faf7ff
-    );
+    justify-content: center;
+    padding: 90px 8%;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            ellipse at 50% 50%,
+            #e9dcf6 0%,
+            #f4edfa 45%,
+            #faf8fc 100%
+        );
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "NOOR'S";
+    position: absolute;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 190px;
+    letter-spacing: 20px;
+    color: rgba(128,85,166,.035);
+    white-space: nowrap;
+    pointer-events: none;
 }
 
 .hero-content {
-    flex: 1;
-    max-width: 520px;
+    max-width: 780px;
+    position: relative;
+    z-index: 2;
     animation: fadeUp 1s ease;
 }
 
 .eyebrow {
     color: var(--purple);
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 600;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
 }
 
 .hero h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(48px, 6vw, 76px);
-    line-height: 1.05;
+    font-size: clamp(55px, 7vw, 88px);
+    line-height: 1;
     font-weight: 500;
     color: var(--purple-deep);
-    margin-bottom: 22px;
+    margin-bottom: 27px;
 }
 
 .hero h1 span {
     color: var(--purple);
+    display: block;
+    font-style: italic;
 }
 
 .hero-content p {
     color: #806d95;
-    font-size: 14px;
-    line-height: 2;
-    margin-bottom: 32px;
+    font-size: 13px;
+    line-height: 2.2;
+    margin: 0 auto 35px;
+    max-width: 580px;
 }
 
 .main-button {
     display: inline-block;
     background: linear-gradient(
-        90deg,
-        var(--purple-light),
-        var(--purple)
+        110deg,
+        #a98bce,
+        #8055a6
     );
 
     color: white;
-    padding: 15px 38px;
-    border-radius: 35px;
-    font-size: 12px;
+    padding: 16px 45px;
+    border-radius: 40px;
+    font-size: 11px;
     letter-spacing: 2px;
     font-weight: 600;
     border: none;
-    transition: .3s;
+    transition: .4s;
+    box-shadow: 0 10px 25px rgba(100,60,140,.15);
 }
 
 .main-button:hover {
     background: var(--purple-deep);
-    transform: translateY(-3px);
-}
-
-.hero-visual {
-    flex: 1;
-    max-width: 490px;
-    position: relative;
-}
-
-.hero-visual::before {
-    content: "";
-    position: absolute;
-    inset: 25px -15px -15px 25px;
-    background: #e4d5f3;
-    border-radius: 35px;
-}
-
-.hero-visual img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 30px;
-    border: 3px solid white;
-    box-shadow: 0 15px 45px rgba(80,40,110,.12);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(50,22,77,.2);
 }
 
 /* =========================
@@ -274,8 +261,8 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 65px;
-    padding: 28px 15px;
+    gap: 75px;
+    padding: 35px 15px;
     background: white;
     border-top: 1px solid #eadcf6;
     border-bottom: 1px solid #eadcf6;
@@ -286,15 +273,15 @@ nav a:hover {
 }
 
 .benefit i {
-    font-size: 22px;
+    font-size: 23px;
     color: var(--purple);
-    margin-bottom: 9px;
+    margin-bottom: 11px;
 }
 
 .benefit p {
-    font-size: 11px;
+    font-size: 10px;
     color: var(--purple-dark);
-    letter-spacing: .5px;
+    letter-spacing: 1px;
 }
 
 /* =========================
@@ -303,19 +290,19 @@ nav a:hover {
 
 .section-title {
     text-align: center;
-    padding: 85px 20px 45px;
+    padding: 100px 20px 55px;
 }
 
 .section-title p {
     color: var(--purple);
     font-size: 10px;
     letter-spacing: 4px;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
 }
 
 .section-title h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 500;
     color: var(--purple-deep);
 }
@@ -332,26 +319,26 @@ nav a:hover {
     );
 
     justify-content: center;
-    gap: 30px;
-    padding: 0 8% 95px;
+    gap: 35px;
+    padding: 0 8% 100px;
 }
 
 .product-card {
     background: white;
-    border: 1px solid #eadcf6;
-    border-radius: 22px;
+    border: 1px solid #e9dff1;
+    border-radius: 20px;
     overflow: hidden;
     transition: .4s;
-    box-shadow: 0 8px 30px rgba(70,35,95,.06);
+    box-shadow: 0 10px 35px rgba(70,35,95,.05);
 }
 
 .product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 18px 40px rgba(70,35,95,.12);
+    transform: translateY(-9px);
+    box-shadow: 0 20px 45px rgba(70,35,95,.13);
 }
 
 .product-image {
-    aspect-ratio: 5 / 7;
+    aspect-ratio: 5 / 6;
     position: relative;
     background: #f1e8fa;
     overflow: hidden;
@@ -361,43 +348,43 @@ nav a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: .5s;
+    transition: .6s;
 }
 
 .product-card:hover .product-image img {
-    transform: scale(1.04);
+    transform: scale(1.06);
 }
 
 .sale-badge {
     position: absolute;
-    top: 17px;
-    left: 17px;
-    background: var(--purple-dark);
+    top: 18px;
+    left: 18px;
+    background: var(--purple-deep);
     color: white;
-    padding: 8px 15px;
+    padding: 9px 17px;
     border-radius: 30px;
-    font-size: 10px;
-    letter-spacing: 1px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
     z-index: 2;
 }
 
 .product-info {
-    padding: 27px 22px;
+    padding: 30px 23px;
     text-align: center;
 }
 
 .product-info h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 27px;
+    font-size: 28px;
     color: var(--purple-deep);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .product-info p {
     font-size: 11px;
     color: #8d7da5;
-    line-height: 1.9;
-    margin-bottom: 17px;
+    line-height: 2;
+    margin-bottom: 20px;
 }
 
 .old-price {
@@ -409,30 +396,33 @@ nav a:hover {
 
 .new-price {
     color: var(--purple);
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 600;
 }
 
 .add-button {
     width: 100%;
-    padding: 14px;
-    margin-top: 22px;
+    padding: 15px;
+    margin-top: 23px;
     border: none;
     border-radius: 30px;
+
     background: linear-gradient(
-        90deg,
-        #a78dd6,
+        110deg,
+        #a98bce,
         #8055a6
     );
+
     color: white;
-    font-size: 11px;
-    letter-spacing: 1.5px;
+    font-size: 10px;
+    letter-spacing: 2px;
     font-weight: 600;
-    transition: .3s;
+    transition: .4s;
 }
 
 .add-button:hover {
     background: var(--purple-deep);
+    letter-spacing: 3px;
 }
 
 /* =========================
@@ -440,24 +430,34 @@ nav a:hover {
 ========================= */
 
 .pack-contents {
-    padding: 0 8% 95px;
+    padding: 0 8% 100px;
+    background: #f8f4fb;
 }
 
 .pack-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 24px;
-    max-width: 1000px;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(240px, 1fr)
+    );
+    gap: 28px;
+    max-width: 1050px;
     margin: auto;
 }
 
 .pack-item {
     background: white;
-    border: 1px solid #eadcf6;
+    border: 1px solid #e9dff1;
     border-radius: 18px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    transition: .4s;
+}
+
+.pack-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(70,35,95,.1);
 }
 
 .pack-item img,
@@ -470,13 +470,19 @@ nav a:hover {
 .pack-item .no-photo {
     display: grid;
     place-items: center;
-    background: linear-gradient(135deg, #b89ad8, #8a63b3);
+
+    background: linear-gradient(
+        135deg,
+        #b89ad8,
+        #8055a6
+    );
+
     color: white;
     font-size: 54px;
 }
 
 .pack-item-text {
-    padding: 22px 22px 24px;
+    padding: 25px 23px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -484,40 +490,39 @@ nav a:hover {
 
 .pack-item-buy {
     margin-top: auto;
-    padding-top: 16px;
+    padding-top: 18px;
 }
 
 .pack-item-buy .item-price {
     display: block;
     color: var(--purple);
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .pack-item-buy .add-button {
-    margin-top: 12px;
-    padding: 12px;
+    margin-top: 13px;
+    padding: 13px;
 }
 
 .pack-item .number {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
+    font-size: 28px;
     color: var(--purple-light);
-    line-height: 1;
     margin-bottom: 10px;
 }
 
 .pack-item h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
     color: var(--purple-deep);
-    margin-bottom: 6px;
+    margin-bottom: 9px;
 }
 
 .pack-item p {
-    font-size: 12px;
-    line-height: 1.8;
+    font-size: 11px;
+    line-height: 2;
     color: #8d7da5;
 }
 
@@ -527,14 +532,16 @@ nav a:hover {
 
 .how-to-order {
     background: white;
-    border-bottom: 1px solid #eadcf6;
-    padding: 0 8% 85px;
+    padding: 0 8% 100px;
 }
 
 .steps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 40px;
     max-width: 1000px;
     margin: auto;
     text-align: center;
@@ -543,9 +550,9 @@ nav a:hover {
 .step .number {
     display: grid;
     place-items: center;
-    width: 46px;
-    height: 46px;
-    margin: 0 auto 16px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
     border-radius: 50%;
     background: var(--lavender);
     color: var(--purple);
@@ -554,34 +561,34 @@ nav a:hover {
 
 .step h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 23px;
+    font-size: 26px;
     font-weight: 600;
     color: var(--purple-deep);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .step p {
-    font-size: 12px;
-    line-height: 1.9;
+    font-size: 11px;
+    line-height: 2;
     color: #8d7da5;
 }
 
 .order-note {
-    max-width: 640px;
-    margin: 40px auto 0;
-    padding: 16px 22px;
-    border-radius: 16px;
+    max-width: 650px;
+    margin: 45px auto 0;
+    padding: 19px 25px;
+    border-radius: 15px;
     background: var(--background);
     border: 1px solid #eadcf6;
     text-align: center;
-    font-size: 12px;
-    line-height: 1.9;
+    font-size: 11px;
+    line-height: 2;
     color: var(--purple-dark);
 }
 
 .order-note i {
     color: var(--purple);
-    margin-right: 6px;
+    margin-right: 7px;
 }
 
 /* =========================
@@ -590,55 +597,59 @@ nav a:hover {
 
 .promotion {
     text-align: center;
-    padding: 85px 20px;
-    background: radial-gradient(
-        circle at center,
-        #8056a2,
-        #32164d 75%
-    );
+    padding: 100px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #8056a2,
+            #32164d 75%
+        );
+
     color: white;
+    position: relative;
 }
 
 .promotion .subtitle {
     color: #e3d2f2;
-    font-size: 11px;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
+    font-size: 10px;
+    letter-spacing: 5px;
+    margin-bottom: 22px;
 }
 
 .promotion h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(34px, 5vw, 55px);
+    font-size: clamp(40px, 5vw, 65px);
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .promotion h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 34px;
+    margin-bottom: 22px;
 }
 
 .promotion h3 span {
     color: #d4bce9;
     text-decoration: line-through;
-    font-size: 18px;
-    margin-right: 10px;
+    font-size: 20px;
+    margin-right: 12px;
 }
 
 .promotion .description {
     color: #e7d8f3;
     font-size: 12px;
-    line-height: 2;
+    line-height: 2.2;
 }
 
 .promotion a {
     display: inline-block;
     background: white;
     color: var(--purple-deep);
-    padding: 15px 38px;
+    padding: 16px 42px;
     border-radius: 30px;
-    margin-top: 27px;
-    font-size: 11px;
+    margin-top: 30px;
+    font-size: 10px;
     letter-spacing: 2px;
     font-weight: 600;
     transition: .3s;
@@ -646,7 +657,7 @@ nav a:hover {
 
 .promotion a:hover {
     background: var(--lavender);
-    transform: translateY(-3px);
+    transform: translateY(-4px);
 }
 
 /* =========================
@@ -654,8 +665,9 @@ nav a:hover {
 ========================= */
 
 .about {
-    padding: 100px 15%;
+    padding: 110px 15%;
     text-align: center;
+
     background: linear-gradient(
         120deg,
         #f6f0fb,
@@ -665,18 +677,18 @@ nav a:hover {
 
 .about h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 47px;
+    font-size: 52px;
     font-weight: 500;
     color: var(--purple-deep);
-    margin-bottom: 22px;
+    margin-bottom: 28px;
 }
 
 .about p {
-    max-width: 680px;
+    max-width: 700px;
     margin: auto;
     color: #81708f;
-    font-size: 13px;
-    line-height: 2.2;
+    font-size: 12px;
+    line-height: 2.5;
 }
 
 /* =========================
@@ -684,23 +696,24 @@ nav a:hover {
 ========================= */
 
 .contact {
-    padding: 85px 20px;
+    padding: 100px 20px;
     text-align: center;
+    background: white;
 }
 
 .contact h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 43px;
+    font-size: 49px;
     font-weight: 500;
     color: var(--purple-deep);
-    margin-bottom: 17px;
+    margin-bottom: 20px;
 }
 
 .contact p {
-    font-size: 13px;
+    font-size: 12px;
     color: #887b94;
     line-height: 2;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
 }
 
 /* =========================
@@ -711,39 +724,39 @@ footer {
     background: var(--purple-deep);
     color: white;
     text-align: center;
-    padding: 48px 20px 35px;
+    padding: 55px 20px 38px;
 }
 
 footer h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 29px;
+    font-size: 35px;
     font-weight: 500;
-    letter-spacing: 6px;
-    margin-bottom: 15px;
+    letter-spacing: 7px;
+    margin-bottom: 17px;
 }
 
 footer p {
     font-size: 10px;
-    line-height: 2.2;
+    line-height: 2.5;
     color: #d7c8e5;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin: 22px 0;
+    gap: 23px;
+    margin: 25px 0;
 }
 
 .social-links a {
-    font-size: 19px;
+    font-size: 20px;
     transition: .3s;
 }
 
 .social-links a:hover {
     color: #c9a9ed;
-    transform: translateY(-3px);
+    transform: translateY(-4px);
 }
 
 /* =========================
@@ -753,7 +766,7 @@ footer p {
 .cart-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(25,10,35,.4);
+    background: rgba(25,10,35,.5);
     opacity: 0;
     visibility: hidden;
     z-index: 199;
@@ -858,8 +871,6 @@ footer p {
     background: var(--lavender);
     color: var(--purple-deep);
     font-size: 15px;
-    line-height: 1;
-    transition: .3s;
 }
 
 .qty-controls {
@@ -958,68 +969,66 @@ footer p {
     }
 
     .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 55px 6%;
-        gap: 45px;
+        min-height: 400px;
+        padding: 65px 6%;
     }
 
     .hero h1 {
-        font-size: 49px;
+        font-size: 53px;
+    }
+
+    .hero::before {
+        font-size: 90px;
     }
 
     .hero-content p {
         font-size: 12px;
     }
 
-    .hero-visual {
-        width: 100%;
-    }
-
     .benefits-strip {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 28px;
     }
 
     .section-title {
-        padding: 65px 15px 35px;
+        padding: 70px 15px 40px;
     }
 
     .section-title h2 {
-        font-size: 36px;
+        font-size: 39px;
     }
 
     .products {
-        padding: 0 6% 65px;
+        padding: 0 6% 70px;
     }
 
     .pack-contents {
-        padding: 0 6% 65px;
+        padding: 0 6% 70px;
     }
 
     .how-to-order {
-        padding: 0 6% 65px;
+        padding: 0 6% 70px;
     }
 
     .promotion {
-        padding: 65px 15px;
+        padding: 75px 15px;
     }
 
     .promotion h2 {
-        font-size: 36px;
+        font-size: 39px;
     }
 
     .about {
-        padding: 65px 7%;
+        padding: 75px 7%;
     }
 
     .about h2 {
-        font-size: 37px;
+        font-size: 39px;
     }
 
     .contact h2 {
-        font-size: 35px;
+        font-size: 38px;
     }
 }
 
@@ -1034,7 +1043,7 @@ footer p {
     }
 
     .hero h1 {
-        font-size: 42px;
+        font-size: 43px;
     }
 
 }
@@ -1106,13 +1115,6 @@ footer p {
             SHOP NOW
         </a>
 
-    </div>
-
-    <div class="hero-visual">
-        <img
-            src="images/hero.jpg"
-            alt="NOOR'S Gentle Face Wash"
-        >
     </div>
 
 </section>
@@ -1219,93 +1221,181 @@ footer p {
     <div class="pack-list">
 
         <div class="pack-item">
-            <img src="images/gallery-1.jpg" alt="NOOR'S Micellar Solution" loading="lazy">
+
+            <img src="images/gallery-1.jpg"
+                 alt="NOOR'S Micellar Solution"
+                 loading="lazy">
+
             <div class="pack-item-text">
+
                 <div class="number">01</div>
+
                 <h3>Micellar Solution</h3>
-                <p>Micellar water with lavender hydrosol and lavender essential oil.</p>
+
+                <p>
+                    Micellar water with lavender hydrosol
+                    and lavender essential oil.
+                </p>
+
                 <div class="pack-item-buy">
                     <span class="item-price">300 DA</span>
-                    <button class="add-button" onclick="addToCart('micellar')">
+
+                    <button class="add-button"
+                            onclick="addToCart('micellar')">
                         ADD TO CART +
                     </button>
                 </div>
+
             </div>
+
         </div>
 
         <div class="pack-item">
-            <img src="images/gallery-2.jpg" alt="NOOR'S Gentle Face Wash" loading="lazy">
+
+            <img src="images/gallery-2.jpg"
+                 alt="NOOR'S Gentle Face Wash"
+                 loading="lazy">
+
             <div class="pack-item-text">
+
                 <div class="number">02</div>
+
                 <h3>Gentle Face Wash</h3>
-                <p>Cleansing gel with lavender hydrosol and lavender essential oil.</p>
+
+                <p>
+                    Cleansing gel with lavender hydrosol
+                    and lavender essential oil.
+                </p>
+
                 <div class="pack-item-buy">
                     <span class="item-price">550 DA</span>
-                    <button class="add-button" onclick="addToCart('facewash')">
+
+                    <button class="add-button"
+                            onclick="addToCart('facewash')">
                         ADD TO CART +
                     </button>
                 </div>
+
             </div>
+
         </div>
 
         <div class="pack-item">
-            <img src="images/gallery-3.jpg" alt="NOOR'S Soft Face Scrub" loading="lazy">
+
+            <img src="images/gallery-3.jpg"
+                 alt="NOOR'S Soft Face Scrub"
+                 loading="lazy">
+
             <div class="pack-item-text">
+
                 <div class="number">03</div>
+
                 <h3>Soft Face Scrub</h3>
-                <p>Gentle face scrub with prickly pear seeds.</p>
+
+                <p>
+                    Gentle face scrub with prickly pear seeds.
+                </p>
+
                 <div class="pack-item-buy">
                     <span class="item-price">600 DA</span>
-                    <button class="add-button" onclick="addToCart('scrub')">
+
+                    <button class="add-button"
+                            onclick="addToCart('scrub')">
                         ADD TO CART +
                     </button>
                 </div>
+
             </div>
+
         </div>
 
         <div class="pack-item">
-            <img src="images/gallery-4.jpg" alt="NOOR'S Purifying and Nourishing Mask" loading="lazy">
+
+            <img src="images/gallery-4.jpg"
+                 alt="NOOR'S Purifying and Nourishing Mask"
+                 loading="lazy">
+
             <div class="pack-item-text">
+
                 <div class="number">04</div>
+
                 <h3>Purifying &amp; Nourishing Mask</h3>
-                <p>Face mask with white clay.</p>
+
+                <p>
+                    Face mask with white clay.
+                </p>
+
                 <div class="pack-item-buy">
                     <span class="item-price">600 DA</span>
-                    <button class="add-button" onclick="addToCart('mask')">
+
+                    <button class="add-button"
+                            onclick="addToCart('mask')">
                         ADD TO CART +
                     </button>
                 </div>
+
             </div>
+
         </div>
 
         <div class="pack-item">
-            <div class="no-photo"><i class="fa-solid fa-spa"></i></div>
+
+            <div class="no-photo">
+                <i class="fa-solid fa-spa"></i>
+            </div>
+
             <div class="pack-item-text">
+
                 <div class="number">05</div>
+
                 <h3>Hydrating Face Cream</h3>
-                <p>Moisturising cream with sweet almond oil and lavender essential oil.</p>
+
+                <p>
+                    Moisturising cream with sweet almond oil
+                    and lavender essential oil.
+                </p>
+
                 <div class="pack-item-buy">
                     <span class="item-price">600 DA</span>
-                    <button class="add-button" onclick="addToCart('cream')">
+
+                    <button class="add-button"
+                            onclick="addToCart('cream')">
                         ADD TO CART +
                     </button>
                 </div>
+
             </div>
+
         </div>
 
         <div class="pack-item">
-            <img src="images/gallery-5.jpg" alt="NOOR'S Nourishing Face Serum" loading="lazy">
+
+            <img src="images/gallery-5.jpg"
+                 alt="NOOR'S Nourishing Face Serum"
+                 loading="lazy">
+
             <div class="pack-item-text">
+
                 <div class="number">06</div>
+
                 <h3>Nourishing Face Serum</h3>
-                <p>Serum with prickly pear seed oil and vitamin E.</p>
+
+                <p>
+                    Serum with prickly pear seed oil
+                    and vitamin E.
+                </p>
+
                 <div class="pack-item-buy">
                     <span class="item-price">750 DA</span>
-                    <button class="add-button" onclick="addToCart('serum')">
+
+                    <button class="add-button"
+                            onclick="addToCart('serum')">
                         ADD TO CART +
                     </button>
                 </div>
+
             </div>
+
         </div>
 
     </div>
@@ -1356,28 +1446,50 @@ footer p {
     <div class="steps">
 
         <div class="step">
+
             <div class="number">1</div>
+
             <h3>Add to cart</h3>
-            <p>Add the pack to your cart and choose your quantity.</p>
+
+            <p>
+                Add the pack to your cart
+                and choose your quantity.
+            </p>
+
         </div>
 
         <div class="step">
+
             <div class="number">2</div>
+
             <h3>Send your order</h3>
-            <p>Tap &ldquo;Order via WhatsApp&rdquo;: your order message is already written for you.</p>
+
+            <p>
+                Tap "Order via WhatsApp":
+                your order message is already written for you.
+            </p>
+
         </div>
 
         <div class="step">
+
             <div class="number">3</div>
+
             <h3>We confirm with you</h3>
-            <p>We reply on WhatsApp to confirm your order with you.</p>
+
+            <p>
+                We reply on WhatsApp
+                to confirm your order with you.
+            </p>
+
         </div>
 
     </div>
 
     <p class="order-note">
         <i class="fa-solid fa-truck"></i>
-        Delivery areas, delivery times and payment options are confirmed with you directly on WhatsApp.
+        Delivery areas, delivery times and payment options
+        are confirmed with you directly on WhatsApp.
     </p>
 
 </section>
@@ -1514,25 +1626,58 @@ footer p {
 <script>
 
 /* =========================
-   CONFIGURATION
+   WHATSAPP CONFIGURATION
 ========================= */
 
-// IMPORTANT:
-// Replace this with your real WhatsApp number.
+// Existing number preserved.
 // International format without + or spaces.
-// Example: 213555123456
 
-const WHATSAPP_NUMBER = "213794310290";
+const WHATSAPP_NUMBER = "33668251844";
+
+
+/* =========================
+   PRODUCTS
+========================= */
 
 const PRODUCTS = {
-    pack:     { name: "NOOR'S Complete Skincare Pack", price: 2900 },
-    micellar: { name: "Micellar Solution",             price: 300 },
-    facewash: { name: "Gentle Face Wash",              price: 550 },
-    scrub:    { name: "Soft Face Scrub",               price: 600 },
-    mask:     { name: "Purifying & Nourishing Mask",   price: 600 },
-    cream:    { name: "Hydrating Face Cream",          price: 600 },
-    serum:    { name: "Nourishing Face Serum",         price: 750 }
+
+    pack: {
+        name: "NOOR'S Complete Skincare Pack",
+        price: 2900
+    },
+
+    micellar: {
+        name: "Micellar Solution",
+        price: 300
+    },
+
+    facewash: {
+        name: "Gentle Face Wash",
+        price: 550
+    },
+
+    scrub: {
+        name: "Soft Face Scrub",
+        price: 600
+    },
+
+    mask: {
+        name: "Purifying & Nourishing Mask",
+        price: 600
+    },
+
+    cream: {
+        name: "Hydrating Face Cream",
+        price: 600
+    },
+
+    serum: {
+        name: "Nourishing Face Serum",
+        price: 750
+    }
+
 };
+
 
 /* =========================
    CART STORAGE
@@ -1541,12 +1686,17 @@ const PRODUCTS = {
 let cart = [];
 
 try {
+
     cart = JSON.parse(
         localStorage.getItem("noorsCart")
     ) || [];
+
 } catch (error) {
+
     cart = [];
+
 }
+
 
 /* =========================
    SAVE CART
@@ -1555,15 +1705,20 @@ try {
 function saveCart() {
 
     try {
+
         localStorage.setItem(
             "noorsCart",
             JSON.stringify(cart)
         );
+
     } catch (error) {
-        // Storage blocked (private browsing...): the cart still works for this visit.
+
+        console.log("Cart storage unavailable.");
+
     }
 
 }
+
 
 /* =========================
    ADD TO CART
@@ -1573,9 +1728,7 @@ function addToCart(productId) {
 
     const PRODUCT = PRODUCTS[productId];
 
-    if (!PRODUCT) {
-        return;
-    }
+    if (!PRODUCT) return;
 
     const existingProduct = cart.find(
         item => item.name === PRODUCT.name
@@ -1596,11 +1749,13 @@ function addToCart(productId) {
     }
 
     saveCart();
+
     updateCart();
 
     openCart();
 
 }
+
 
 /* =========================
    REMOVE PRODUCT
@@ -1611,15 +1766,19 @@ function removeItem(index) {
     cart.splice(index, 1);
 
     saveCart();
+
     updateCart();
 
 }
+
 
 /* =========================
    CHANGE QUANTITY
 ========================= */
 
 function changeQuantity(index, amount) {
+
+    if (!cart[index]) return;
 
     cart[index].quantity += amount;
 
@@ -1630,9 +1789,11 @@ function changeQuantity(index, amount) {
     }
 
     saveCart();
+
     updateCart();
 
 }
+
 
 /* =========================
    UPDATE CART
@@ -1640,13 +1801,17 @@ function changeQuantity(index, amount) {
 
 function updateCart() {
 
-    const cartItems = document.getElementById("cart-items");
+    const cartItems =
+        document.getElementById("cart-items");
 
-    const cartCount = document.getElementById("cart-count");
+    const cartCount =
+        document.getElementById("cart-count");
 
-    const cartTotal = document.getElementById("cart-total");
+    const cartTotal =
+        document.getElementById("cart-total");
 
     let total = 0;
+
     let quantityTotal = 0;
 
     cartItems.innerHTML = "";
@@ -1670,64 +1835,73 @@ function updateCart() {
 
         quantityTotal += item.quantity;
 
-        cartItems.innerHTML += `
+        const row = document.createElement("div");
 
-            <div class="cart-item">
+        row.className = "cart-item";
 
-                <div>
+        row.innerHTML = `
 
-                    <strong>${item.name}</strong>
+            <div>
 
-                    <span class="cart-item-price">
-                        ${item.price.toLocaleString("en-US")} DA
-                    </span>
+                <strong></strong>
 
-                    <br><br>
+                <span class="cart-item-price"></span>
 
-                    <button
-                        class="remove-button"
-                        onclick="removeItem(${index})"
-                    >
-                        Remove
-                    </button>
+                <br><br>
 
-                </div>
+                <button class="remove-button" type="button">
+                    Remove
+                </button>
 
-                <div class="qty-controls">
+            </div>
 
-                    <button
-                        class="qty-button"
-                        onclick="changeQuantity(${index}, -1)"
-                        aria-label="Decrease quantity"
-                    >
-                        −
-                    </button>
+            <div class="qty-controls">
 
-                    <strong style="margin:0 10px;">
-                        ${item.quantity}
-                    </strong>
+                <button class="qty-button decrease" type="button">
+                    −
+                </button>
 
-                    <button
-                        class="qty-button"
-                        onclick="changeQuantity(${index}, 1)"
-                        aria-label="Increase quantity"
-                    >
-                        +
-                    </button>
+                <strong class="item-quantity"
+                        style="margin:0 10px;">
+                </strong>
 
-                </div>
+                <button class="qty-button increase" type="button">
+                    +
+                </button>
 
             </div>
 
         `;
 
+        row.querySelector("strong").textContent =
+            item.name;
+
+        row.querySelector(".cart-item-price").textContent =
+            item.price.toLocaleString("en-US") + " DA";
+
+        row.querySelector(".item-quantity").textContent =
+            item.quantity;
+
+        row.querySelector(".remove-button").onclick =
+            () => removeItem(index);
+
+        row.querySelector(".decrease").onclick =
+            () => changeQuantity(index, -1);
+
+        row.querySelector(".increase").onclick =
+            () => changeQuantity(index, 1);
+
+        cartItems.appendChild(row);
+
     });
 
     cartCount.textContent = quantityTotal;
 
-    cartTotal.textContent = total.toLocaleString("en-US");
+    cartTotal.textContent =
+        total.toLocaleString("en-US");
 
 }
+
 
 /* =========================
    OPEN CART
@@ -1745,6 +1919,7 @@ function openCart() {
 
 }
 
+
 /* =========================
    CLOSE CART
 ========================= */
@@ -1761,6 +1936,7 @@ function closeCart() {
 
 }
 
+
 /* =========================
    CHECKOUT
 ========================= */
@@ -1775,14 +1951,9 @@ function checkout() {
 
     }
 
-    if (
-        WHATSAPP_NUMBER === "213XXXXXXXXX" ||
-        !/^\d{10,15}$/.test(WHATSAPP_NUMBER)
-    ) {
+    if (!/^\d{10,15}$/.test(WHATSAPP_NUMBER)) {
 
-        alert(
-            "Please configure your WhatsApp number in the website code first."
-        );
+        alert("Please check your WhatsApp number.");
 
         return;
 
@@ -1796,20 +1967,23 @@ function checkout() {
 
     cart.forEach(item => {
 
-        const subtotal = item.price * item.quantity;
+        const subtotal =
+            item.price * item.quantity;
 
         total += subtotal;
 
         message +=
             "• " + item.name + "\n" +
             "Quantity: " + item.quantity + "\n" +
-            "Price: " + subtotal.toLocaleString("en-US") +
+            "Price: " +
+            subtotal.toLocaleString("en-US") +
             " DA\n\n";
 
     });
 
     message +=
-        "Total: " + total.toLocaleString("en-US") +
+        "Total: " +
+        total.toLocaleString("en-US") +
         " DA\n\nThank you!";
 
     const whatsappURL =
@@ -1826,17 +2000,21 @@ function checkout() {
 
 }
 
+
 /* =========================
-   KEYBOARD SUPPORT
+   KEYBOARD
 ========================= */
 
 document.addEventListener("keydown", function(event) {
 
     if (event.key === "Escape") {
+
         closeCart();
+
     }
 
 });
+
 
 /* =========================
    INITIALIZE
